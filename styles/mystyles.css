@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+    color: rgb(0, 30, 128);
+  background-color: #def5ff }
+
+
+  .banner {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 20px; /* Add some padding */
+  }
+  
+.mainPanel {
+width: 90%; /* Adjust the width as needed */
+padding: 40px;
+box-sizing: border-box;
+float: left;
+}
+
+iframe {
+  
+  padding: 10px;
+  height: 500px;
+
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(25% - 10px);
+  box-sizing: border-box;
+}
+
+.mainPanel h1 {
+  color: rgb(0, 30, 128);
+  padding-bottom: 20px;
+}
+
+
+.personContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between boxes as needed */
+  justify-content: space-between; /* Distribute space between items */
+  padding-bottom: 20px;
+
+}
+
+/* Individual person boxes */
+.personBox {
+  background: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(25% - 20px); /* Make boxes take up 25% of the container width, minus the gap */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personBox img {
+  filter: invert(40%) sepia(20%) saturate(2085%) hue-rotate(189deg) brightness(99%) contrast(89%);
+
+
+
+
+
+
+
+
+  width: 50px; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+.personBox h3, .personBox p {
+  text-align: center;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%; /* Ensure text doesn't overflow */
+}
+
+/* Ensure all text boxes are the same height */
+.personBox p {
+  flex-grow: 1; /* Allow the paragraph to grow and take available space */
+}
+
+@media (max-width: 800px) {
+  .personBox {
+    width: calc(50% - 20px); /* Two per row on smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .personBox {
+    width: calc(100% - 20px); /* Full width on very small screens */
+  }
+}
+
+
+.figurePanel {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 300px; /* Adjust the width as needed */
+  float: right; /* Align the panel to the right side */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.figureNumber {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.figureTitle {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.figureImage {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1em;
+}
+
+.figureLegend {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.figureNote {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.figureNote em {
+  font-style: italic;
+}
+
+
+hr.solid {
+  border-top: 3px solid rgb(0, 30, 128);
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    margin-bottom: 0px;
+    color: #1e3b12;
+font-size: 2.5em;
+}
+    
+
+h3.MainHeadline  {
+        margin-top: 7px;
+
+  font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    font-weight: 50;
+    color: #1e3b12;
+
+  }
+
+     .sideBar {
+background-color: #4CAF50;
+float: left;
+padding: 0;
+margin: 0;
+width: 10%; /* Adjust the width as needed */
+height: 100vh;
+}
+
+ul.navbar {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+ul.navbar li {
+background: rgb(138, 219, 83);
+margin: 0.5em 0;
+padding: 0.3em;
+line-height: 1.2;
+text-align: center;
+
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 1.1vw;
+}
+
+
+ul.navbar a {
+text-decoration: none; /* Remove underline */
+color: inherit; /* Use the default text color */
+}
+
+ul.navbar a:link,
+ul.navbar a:visited {
+color: inherit; /* Use the default text color for unvisited and visited links */
+}
+
+ul.navbar a:hover,
+ul.navbar a:active {
+color: rgb(0, 30, 128); /* Change color on hover and when active */
+}
+
+address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted }
